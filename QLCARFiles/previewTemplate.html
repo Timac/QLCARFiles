@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+.gallery {
+    border: 1px solid #ccc;
+    float: left;
+    width: PREVIEW_MAX_WIDTHpx;
+    height: PREVIEW_MAX_HEIGHTpx;
+    position:relative;
+}
+
+.gallery img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: PREVIEW_MAX_WIDTHpx;
+	max-height: PREVIEW_MAX_HEIGHTpx;
+}
+
+.dataDescription {
+	width: 100%;
+	line-height: PREVIEW_MAX_HEIGHTpx;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.description {
+	background: rgba(0,0,0,0.4);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+p {
+	margin : 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: x-small;
+	text-align: center;
+	color: white;
+}
+
+</style>
+</head>
+<body>
