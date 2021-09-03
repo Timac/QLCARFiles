@@ -169,7 +169,7 @@ BOOL ProcessCarFileAtPath(NSString *inCarPath, NSString *inOutputFolder, CarName
 	if(versionString != NULL)
 	{
 		NSString *version = [NSString stringWithCString:versionString encoding:NSUTF8StringEncoding];
-		if(![version hasPrefix:@"IBCocoaTouchImageCatalogTool-"] && ![version hasPrefix:@"ibtoold-"])
+		if([version containsString:@"ProThemeDefinition"])
 		{
 			// Unsupported car file
 			return NO;
