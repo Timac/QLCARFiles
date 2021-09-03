@@ -180,7 +180,7 @@ void ProcessCARFilesInFolder(NSString *inFolderPath, NSString *inOutputPathPrefi
 	}
 }
 
-void PrintUsage()
+static void PrintUsage()
 {
 	printf("NAME\n");
 	printf("\t\tcarDump to dump .car files\n\n");
