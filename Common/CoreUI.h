@@ -9,6 +9,7 @@
 #pragma once
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 
 // MARK: - kCoreThemeIdiom
