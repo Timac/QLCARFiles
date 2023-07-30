@@ -22,6 +22,19 @@ The `QLCARFiles` QuickLook plugin lets you visualize the content of a car file. 
 - The command line tool has a `-r` option to dump all the car files found in a folder
 
 
+## Installation
+
+macOS 10.14 or later is required. Please note that the precompiled binaries are not code signed. To install the precompiled QuickLook plugin, you should:
+
+1. Download and unzip [`QLCARFiles.qlgenerator.zip`](https://github.com/Timac/QLCARFiles/releases)
+2. Remove the quarantine flag by running in the Terminal `xattr -c -r QLCARFiles.qlgenerator`    
+3. Move `QLCARFiles.qlgenerator` to `~/Library/QuickLook/QLCARFiles.qlgenerator`. Note that you might need to create the folder `~/Library/QuickLook/`.
+4. Execute in the Terminal `qlmanage -r` to make sure the QLCARFiles plugin is loaded
+
+Alternatively you can sign the precompiled binaries or recompile the application yourself.
+
+
+
 ## Known limitations
 
 - No support for special car files used by pro applications like Final Cut Pro.
